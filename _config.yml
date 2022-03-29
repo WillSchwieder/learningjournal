@@ -2,8 +2,8 @@
 title:               'Today I Learned'
 tagline:             'Notes to self about software development'
 description:         ''
-url:                 'https://appdev-projects.github.io/'
-baseurl:             'til/'
+url:                 'https://WillSchwieder.github.io/'
+baseurl:             'learningjournal/'
 paginate:            5
 permalink:           pretty
 
