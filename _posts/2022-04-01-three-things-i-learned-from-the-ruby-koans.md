@@ -18,7 +18,35 @@ Here are a couple of things I learned from [The Ruby Koans](http://rubykoans.com
     - [/\d+/]
     - [/[a-zA-Z0-9_]+/]
     - Honestly, there are too many to paste all of them here so just refer back to the "about_regular_expressions" module when you're Googling this in the future.
-8. To be continued...
+8. There is an "unless" option within if statements that acts as a falsifier
+9. Why does the following code work?
+    - def test_break_statement
+        i = 1
+        result = 1
+        while true
+        break unless i <= 10
+        result = result * i
+        i += 1
+        end
+        assert_equal 3628800, result
+10. Proper way to handle a particular error:
+    - def test_raising_a_particular_error
+            result = nil
+            begin
+      raise MySpecialError, "My Message"
+    rescue MySpecialError => ex
+      result = :exception_handled
+    end    
+
+11. I have no clue what inject does with Arrays, will need to do more reading
+12. The last piece of the blocks is fuzzy to me as well. 
+13. Classes operate very similarly to Python classes, class define then method define, self classes intialize objects within a class
+14. To initialize an attribute in a class use "attr_reader :values" where "values" is replaced by whatever attribute you want to initialize. Very similar to Python.
+15. Actually this is even closer to what I am used to in Python: 
+    - def self.class_method2
+      :another_way_to_write_class_methods
+    end
+
 
 
 --- 
