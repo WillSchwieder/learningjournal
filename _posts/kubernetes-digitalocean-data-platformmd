@@ -1,0 +1,28 @@
+# Advanced Data Platform w/ Kubernetes 
+## _Objective: Setup a Kubernetes Cluster in Digital Ocean_
+
+### Setup Digital Ocean Environment
+1. Went to digitalocean.com, set up an account
+2. Deployed 3 Ubunto 18.04(LTS) servers
+3. SSH-ed into each using a terminal and updated with most recent versions and installed packages for secure networking and GPG signing:
+a. apt update && apt upgrade -y
+b. 
+```sh
+apt install -y \ 
+apt-transport-https \ 
+ca-certificates \ 
+curl \
+gnupg-agent \
+software-properties-common
+```
+
+### Installing WireGuard VPN
+I am going to include as many safeguards for secure network traffic as possible. The VPN I installed below makes internal traffic encrypted, probably overkill for 99.9% of usecases but I figure best to play it safe.
+
+1. Adding the WireGuard repository
+```sh
+add-apt-respoitory -y ppa:wireguard/wireguard
+```
+
+Dillinger is a cloud-enabled, mobile-ready, offline-storage compatible,
+AngularJS-powered HTML5 Markdown editor.
